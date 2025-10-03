@@ -34,7 +34,7 @@ samp_size: 1000
 samp_size_unit: mL
 ---
 
-# NOAA PMEL OME eDNA Collection Protocol via Gravity Filtration
+# NOAA PMEL OME eDNA Collection Protocol with Sterivex and Gravity Filtration
 
 ## PROTOCOL INFORMATION
 
@@ -70,8 +70,9 @@ samp_size_unit: mL
 
 | PROTOCOL NAME | LINK         | VERSION      | RELEASE DATE | INTERNAL/EXTERNAL |
 | ------------- | ------------ | ------------ | ------------ | ----------------- |
-| NOAA-PMEL-OME_eDNA_Collection_Protocol_PeristalticPump | New Link |  1.1.0  | 2025-05-29 |
-| NOAA-PMEL-OME_Extraction_Protocol_Sterivex_Centrifuge | https://github.com/marinednadude/NOAA-PMEL-OME_Extraction_Protocol_Sterivex_Centrifuge/blob/main/NOAA-PMEL-OME_Extraction_Protocol_Sterivex_Centrifuge.md | 1.1.1 | 2025-05-27 | Internal|
+| NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_PeristalticPump | https://github.com/marinednadude/NOAA-PMEL-OME_eDNA_Collection_Protocol_Niskin/blob/main/NOAA-PMEL-OME_eDNA_Collection_Protocol_Sterivex_PeristalticPump.md |  1.1.1  | 2025-10-03 | Internal |
+| NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters_VacuumManifold | https://github.com/Brown-NOAA/NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters_VacuumManifold_BeBOP/blob/main/NOAA-PMEL-OME_eDNA_Collection_Protocol_DiscFilters_VacuumManifold.md | 1.0.0  | 2025-10-03  | Internal |
+| NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge | https://github.com/HanWeinrich/NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge_BeBOP/blob/main/NOAA-PMEL-OME_eDNA_DiscFilters_Extraction_Protocol_Centrifuge.md | 1.1.0 | 2025-08-22 | Internal|	
 
 ### Protocol Revision Record
 
@@ -107,7 +108,7 @@ samp_size_unit: mL
 | SPECIALISED TERM | DEFINITION |
 | ------------- | ------------- |
 | Conductivity, Temperature, Depth (CTD) sensor | Sensor used to measure temperature, conductivity, and pressure. Additional sensors are often attached to the frame of the deployable CTD (oxygen, chlorophyll, pH, etc.) to collect additional data. Often, niskin bottles are attached to the same deployable metal frame as the CTD and ancillary sensors so that water parameter data are collected alongside niskin water samples. Deployments of this suite of instruments and sensors on the same frame are often referred to as a "CTD cast". |
-| Field blank | Sampling negative control. Typically, distilled or reverse osmosis wateris  run through a filter like a seawater eDNA sample to control for contamination in the field sampling step.  |
+| Field blank | Sampling negative control. Typically, distilled or reverse osmosis water is run through a filter like a seawater eDNA sample to control for contamination in the field sampling step.  |
 | Niskin bottle  | Plastic cylindrical bottle of varying volumes for collecting discrete water samples. A stopper at each end of the bottle can be "cocked" open with an electronic or weight-triggered release mechanism, causing the stoppers to snap shut. This is remotely triggered, so the bottle closes at a prescribed depth. Often, multiple bottles are arranged on the same frame as a CTD and other sensors in a "rosette". |
 
 ## BACKGROUND
@@ -134,13 +135,13 @@ This protocol does not involve any hazardous chemicals, although standard precau
 
 ### Training Requirements
 
-Molecular biology training (including, at a minimum, sterile technique and pipetting technique) is required to conduct this protocol. Experience with going to sea and sample collection under seagoing conditions is encouraged, at a minimum personel should be trained in the filtering protocol in a laboratory/docked ship setting beforehand.
+Molecular biology training (including, at a minimum, sterile technique and pipetting technique) is required to conduct this protocol. Experience with going to sea and sample collection under seagoing conditions is encouraged at a minimum, personnel should be trained in the filtering protocol in a laboratory/docked ship setting beforehand.
 
 ### Time Required to Execute the Procedure
 
-The time needed varies widely based on the number and type of samples collected. For a majority of our sampling, niskin bottles on a CTD rosette and/or ROV are triggered to collect at three depths (e.g., surface, 30m, and 10m off bottom). Then pending the study design and niskin size, a singular sample or triplicate samples are collected from each niskin. The depth of collection and number of samples affect the time required - for instance, a cast to 30 m may take 10 minutes, while a cast to 600 m may take over an hour. Collecting samples from the niskins take between 10-30 minutes, depending on access and whether the water is being used for other science. We've also collected samples using a bucket or by directly submerging bottles and/or gravity bags in sample water in situ, which takes significantly less time for collection.
+The time needed varies widely based on the number and type of samples collected. For a majority of our sampling, niskin bottles on a CTD rosette and/or ROV are triggered to collect at three depths (e.g., surface, 30m, and 10m off bottom). Then, pending the study design and niskin size, a singular sample or triplicate samples are collected from each niskin. The depth of collection and number of samples affect the time required - for instance, a cast to 30 m may take 10 minutes, while a cast to 600 m may take over an hour. Collecting samples from the niskins takes between 10-30 minutes, depending on access and whether the water is being used for other science. We've also collected samples using a bucket or by directly submerging bottles and/or gravity bags in sample water in situ, which takes significantly less time for collection.
 
-The gravity bag filtration set-up for three singular samples takes on average 10 minutes. Pending the turbidity of the water, the filtering of a single sample takes 30-80 minutes and then preservation takes 5 minutes. The time requirement is different from standard peristaltic or vacumm manifold fitlering because multiple samples can filter simultanously and you can walk away from gravity bags while filtering.
+The gravity bag filtration set-up for three singular samples takes on average 10 minutes. Pending the turbidity of the water, the filtering of a single sample takes 30-80 minutes, and then preservation takes 5 minutes. The time requirement is different from standard peristaltic or vacuum manifold filtering because multiple samples can be filtered simultaneously, and you can walk away from gravity bags while filtering.
 
 The total collection and filtering time for a singular cast with three niskins triggered and one sample taken from each niskin is 120 minutes (2 hours) on average. More casts, more samples = more time.
 
@@ -219,7 +220,7 @@ Bottle Sterilization Method with (RO Not Available):
 3. Once the CTD is on deck, take bleached 1 L Nalgene bottles and dispense ~250 ml of sample seawater from the Niskin into the bottle; close the lid and shake vigorously. Dump. This will rid the container of residual bleach. Repeat process 2x (= three rinses in total). Water must come from the same Niskin that will be the source of the actual sample; otherwise, there will be cross-contamination.
 
 **Connector Preparation and Sterilization:**
-To facilitate the connection between the IV bag and sterivex, you need to cut the PVC tubing into 4" pieces and then add the hose barb adaptor to one end. These connectors can be sterilized in advance and stored in whirl-paks. They can also be reused, as long as they are sterilized between each sample. We recommend bring sufficient connectors to avoid sampling backlog.
+To facilitate the connection between the IV bag and sterivex, you need to cut the PVC tubing into 4" pieces and then add the hose barb adaptor to one end. These connectors can be sterilized in advance and stored in whirl-paks. They can also be reused, as long as they are sterilized between each sample. We recommend bringing sufficient connectors to avoid a sampling backlog.
 
 Connector Sterilization:
 1. Prepare a 10% bleach solution in one of the buckets (2 L). Then, grab another sterile bucket and fill it with RO water (2 L).
@@ -236,7 +237,7 @@ Connector Sterilization:
 
 **Field Sampling Records:**
 
-When eDNA sampling in the field, there should be a corresponding record sheet or field notebook. On larger cruises where cruise CTD logs are kept after each cast, record the sample # in the logs in the corresponding niskin row. Record additional information like the date, sample #, sample depth, cast #, filtering issues, etc. in your own records sheet or notebook.
+When eDNA sampling in the field, there should be a corresponding record sheet or field notebook. On larger cruises where cruise CTD logs are kept after each cast, record the sample # in the logs in the corresponding niskin row. Record additional information like the date, sample #, sample depth, cast #, filtering issues, etc., in your own records sheet or notebook.
 
 On smaller cruises where no CTD logs are kept or water is sampled without a CTD, more detail is required in the record sheet. Record the date, sample #, site name, lat/long, cast #, depth, and any other associated notes (e.g., filtering issues, sampling device, cast deployment time).
 
@@ -257,7 +258,7 @@ The gravity bags are often not easy to store, so if you need to move to a differ
 2. Fill the sterile 1 L Nalgene bottle with water from the niskin or bucket. Ensure you fill above the bottom of the bottle neck (= 1 L), as you want extra sample water volume to rinse the gravity bag.
 3. After collecting, if you don’t have time to filter immediately, label and store bottles in the fridge or cooler with ice (4˚C) for up to 12 hours (>4 hours is not ideal). Denote time on record sheet.
 4. When you are prepared to filter, label the gravity bag with the station name, date, site, and niskin #.
-5. Next, fill the gravity bag with ~30-50 mL sample water, shake for 20-30 seconds, and dump. Complete this rinse step 2-3x (pending water availability) to ensure bag sterility. 
+5. Next, fill the gravity bag with ~30-50 mL of sample water, shake for 20-30 seconds, and dump. Complete this rinse step 2-3x (pending water availability) to ensure bag sterility. 
 6. Once rinsed, dump the sample from the 1 L Nalgene bottle into the gravity bag.
 
 ### Filtration
@@ -318,6 +319,6 @@ Turbid samples may only filter ~500 mL. Note the estimated volume filtered. If <
 
 **Issue 3:** Broken filter inlet or outlet
 
-**Solution:** If broken during filtering, stop filtering, record volume filtered, and denote damage. Next, use parafilm and label tape to seal the broken outlet/inlet of the sterivex. Store in whirl-pak. Sample might be salvagable. 
+**Solution:** If broken during filtering, stop filtering, record volume filtered, and denote damage. Next, use parafilm and label tape to seal the broken outlet/inlet of the sterivex. Store in whirl-pak. Sample might be salvageable. 
 
 ## REFERENCES
